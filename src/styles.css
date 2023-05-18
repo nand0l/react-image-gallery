@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 20;
+  font-family: 'Montserrat', sans-serif;
+  color:antiquewhite;
+  background-color: rgb(48, 48, 51);
+}
+.selection{
+  background-color: #2f2f2f;
+  border: 0;
+  color:antiquewhite;
+}
+.selection :hover{
+  background-color: burlywood;
+
+}
+.App {
+    font-family: Arial;
+    text-align: center;
+  }
+  

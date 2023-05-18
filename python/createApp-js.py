@@ -15,25 +15,26 @@ with open(action_folder+'/App-head.txt') as header_file:
 with open(action_folder+'/App-tail.txt') as tail_file:
     tail = tail_file.read()
 
-# generate file list of the complete bucket folder
-response = s3.list_objects_v2(Bucket=bucket_name, Prefix=remote_folder_path)
-
-# Create the jso output directory if it doesn't exist
-# all json files will be written to this directory
+# Create the output directory if it doesn't exist
+# all js files will be written to this directory
 output_dir = action_folder[:-6]+'src/js'
 os.makedirs(output_dir, exist_ok=True)
-
 
 # Group filenames by folder
 folder_files = {}
 
-for obj in response['Contents']:
-    key = obj['Key']
-    if len(key) > len(remote_folder_path):
-        folder = key[len(remote_folder_path):].split('/')[0]
-        if folder not in folder_files:
-            folder_files[folder] = []
-        folder_files[folder].append(key)
+# Pagination to handle buckets with more than 1000 objects
+paginator = s3.get_paginator('list_objects_v2')
+page_iterator = paginator.paginate(Bucket=bucket_name, Prefix=remote_folder_path)
+
+for page in page_iterator:
+    for obj in page['Contents']:
+        key = obj['Key']
+        if len(key) > len(remote_folder_path):
+            folder = key[len(remote_folder_path):].split('/')[0]
+            if folder not in folder_files:
+                folder_files[folder] = []
+            folder_files[folder].append(key)
 
 # Write the filenames to separate output files for each folder
 for folder, filenames in folder_files.items():
@@ -48,7 +49,7 @@ for folder, filenames in folder_files.items():
         for i, filename in enumerate(valid_filenames):
             filename = filename.replace(remote_folder_path, '').replace(' ', '+')
             pic_url = start_with + remote_folder_path+filename
-            line_2_write ='{\n\t"original":"'+start_with+remote_folder_path+filename+'",\n\t"thumbnail":"'+start_with+remote_folder_path+filename+'"\n}'
+            line_2_write ='{\n\t"original":"'+pic_url+'",\n\t"thumbnail":"'+pic_url+'"\n}'
             # If not the last element, add a comma at the end
             if i != last_index:
                 line_2_write += ','

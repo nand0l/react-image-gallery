@@ -14,7 +14,8 @@ const availableScripts = [
   '[MetArt.com]_23-05-11_Decima-Appetite_(x122)_3255x4324',
   '[MetArt.com]_23-05-11_Ellie_Luna-Handiwork_(x131)_2882x4324',
   '[MetArt.com]_23-05-11_MerciaFrancis-Mesmeric_(x123)_5464x8192',
-  '[MetArt.com]_23-05-11_MilaAzul-Fetish_Party_(x112)_2815x4220',  // Add more script names here...
+  '[MetArt.com]_23-05-11_MilaAzul-Fetish_Party_(x112)_2815x4220',
+  'AliceRedlips(x1304)',  // Add more script names here...
 ];
 
 function AppWrapper() {

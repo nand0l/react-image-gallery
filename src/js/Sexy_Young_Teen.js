@@ -1,0 +1,202 @@
+import "./styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+export default function App() {
+  const images = [
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(1).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(1).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(10).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(10).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(11).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(11).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(12).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(12).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(13).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(13).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(14).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(14).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(15).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(15).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(16).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(16).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(17).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(17).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(18).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(18).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(19).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(19).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(2).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(2).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(20).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(20).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(21).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(21).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(22).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(22).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(23).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(23).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(24).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(24).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(25).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(25).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(26).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(26).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(27).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(27).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(28).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(28).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(29).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(29).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(3).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(3).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(30).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(30).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(31).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(31).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(32).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(32).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(33).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(33).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(34).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(34).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(35).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(35).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(36).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(36).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(37).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(37).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(38).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(38).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(39).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(39).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(4).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(4).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(40).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(40).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(41).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(41).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(42).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(42).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(43).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(43).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(44).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(44).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(5).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(5).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(6).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(6).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(7).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(7).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(8).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(8).jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(9).jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Sexy_Young_Teen/+(9).jpg"
+}
+]
+        
+    ;
+
+  return (
+    <div className="App">
+      <ImageGallery
+        items={images}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        onPlay={() => {
+          alert("slideshow is now playing!");
+        }}
+      />
+    </div>
+  );
+}

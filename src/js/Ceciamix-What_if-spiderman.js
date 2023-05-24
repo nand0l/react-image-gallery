@@ -1,0 +1,178 @@
+import "./styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+export default function App() {
+  const images = [
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_001.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_001.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_002.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_002.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_003.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_003.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_004.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_004.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_005.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_005.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_006.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_006.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_007.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_007.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_008.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_008.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_009.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_009.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_010.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_010.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_011.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_011.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_012.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_012.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_013.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_013.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_014.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_014.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_015.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_015.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_016.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_016.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_017.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_017.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_018.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_018.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_019.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_019.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_020.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_020.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_021.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_021.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_022.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_022.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_023.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_023.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_024.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_024.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_025.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_025.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_026.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_026.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_027.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_027.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_028.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_028.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_029.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_029.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_030.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_030.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_031.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_031.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_032.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_032.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_033.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_033.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_034.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_034.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_035.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_035.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_036.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_036.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_037.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_037.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_038.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Ceciamix-What_if-spiderman/5476547_038.jpg"
+}
+]
+        
+    ;
+
+  return (
+    <div className="App">
+      <ImageGallery
+        items={images}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        onPlay={() => {
+          alert("slideshow is now playing!");
+        }}
+      />
+    </div>
+  );
+}

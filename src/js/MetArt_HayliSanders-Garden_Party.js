@@ -1,0 +1,414 @@
+import "./styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+export default function App() {
+  const images = [
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0001.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0001.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0002.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0002.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0003.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0003.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0004.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0004.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0005.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0005.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0006.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0006.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0007.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0007.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0008.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0008.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0009.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0009.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0010.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0010.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0011.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0011.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0012.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0012.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0013.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0013.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0014.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0014.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0015.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0015.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0016.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0016.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0017.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0017.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0018.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0018.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0019.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0019.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0020.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0020.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0021.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0021.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0022.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0022.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0023.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0023.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0024.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0024.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0025.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0025.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0026.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0026.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0027.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0027.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0028.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0028.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0029.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0029.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0030.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0030.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0031.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0031.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0032.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0032.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0033.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0033.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0034.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0034.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0035.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0035.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0036.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0036.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0037.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0037.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0038.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0038.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0039.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0039.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0040.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0040.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0041.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0041.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0042.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0042.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0043.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0043.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0044.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0044.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0045.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0045.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0046.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0046.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0047.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0047.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0048.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0048.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0049.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0049.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0050.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0050.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0051.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0051.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0052.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0052.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0053.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0053.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0054.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0054.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0055.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0055.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0056.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0056.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0057.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0057.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0058.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0058.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0059.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0059.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0060.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0060.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0061.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0061.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0062.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0062.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0063.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0063.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0064.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0064.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0065.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0065.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0066.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0066.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0067.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0067.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0068.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0068.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0069.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0069.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0070.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0070.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0071.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0071.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0072.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0072.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0073.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0073.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0074.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0074.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0075.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0075.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0076.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0076.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0077.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0077.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0078.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0078.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0079.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0079.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0080.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0080.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0081.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0081.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0082.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0082.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0083.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0083.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0084.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0084.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0085.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0085.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0086.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0086.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0087.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0087.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0088.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0088.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0089.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0089.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0090.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0090.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0091.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0091.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0092.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0092.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0093.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0093.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0094.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0094.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0095.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0095.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0096.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0096.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0097.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/MetArt_HayliSanders-Garden_Party/0097.jpg"
+}
+]
+        
+    ;
+
+  return (
+    <div className="App">
+      <ImageGallery
+        items={images}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        onPlay={() => {
+          alert("slideshow is now playing!");
+        }}
+      />
+    </div>
+  );
+}

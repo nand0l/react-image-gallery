@@ -17,8 +17,9 @@ with open(action_folder+'/App-tail.txt') as tail_file:
 
 # Create the output directory if it doesn't exist
 # all js files will be written to this directory
-output_dir = action_folder[:-6]+'src/js'
-os.makedirs(output_dir, exist_ok=True)
+output_dir_js = action_folder[:-6]+'src/js'
+os.makedirs(output_dir_js, exist_ok=True)
+
 
 # Group filenames by folder
 folder_files = {}
@@ -39,7 +40,7 @@ for page in page_iterator:
 # Write the filenames to separate output files for each folder
 for folder, filenames in folder_files.items():
     folder = "".join(folder.split())
-    output_json_file = os.path.join(output_dir, f'{folder}.js')
+    output_json_file = os.path.join(output_dir_js, f'{folder}.js')
     with open(output_json_file, 'w') as file:
         file.write(header)
         file.write("[\n")
@@ -57,4 +58,5 @@ for folder, filenames in folder_files.items():
             file.write(line_2_write)
         file.write(']\n')
         file.write(tail)
-        print(f'File list for folder {folder} saved to {output_json_file}')
+        print("'"+folder+"',")
+        

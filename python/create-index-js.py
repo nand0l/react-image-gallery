@@ -49,8 +49,13 @@ with open(output_index_file, 'w') as index_js_file:
                     folder_files[folder] = []
                 folder_files[folder].append(key)
 
-    # Write the filenames to separate output files for each folder
-    for folder, filenames in folder_files.items():
+
+    # Sort the folders alphabetically
+    # Sort the folders alphabetically (case-insensitive)
+    sorted_folders = sorted(folder_files.keys(), key=lambda s: s.lower())
+    # Write the filenames to separate output files for each sorted folder
+    for folder in sorted_folders:
+        filenames = folder_files[folder]
         folder = "".join(folder.split())
         output_json_file = os.path.join(output_dir_js, f'{folder}.js')
         with open(output_json_file, 'w') as file:
@@ -74,3 +79,4 @@ with open(output_index_file, 'w') as index_js_file:
             print("'"+folder+"',")
     index_js_file.write('];\n')
     index_js_file.write(index_tail)
+# Want to make  sure that the items in the list in index_js_file i written in alphabetical order

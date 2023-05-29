@@ -1,0 +1,254 @@
+import "./styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+export default function App() {
+  const images = [
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0001.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0001.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0002.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0002.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0003.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0003.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0004.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0004.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0005.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0005.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0006.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0006.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0007.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0007.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0008.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0008.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0009.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0009.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0010.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0010.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0011.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0011.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0012.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0012.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0013.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0013.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0014.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0014.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0015.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0015.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0016.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0016.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0017.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0017.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0018.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0018.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0019.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0019.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0020.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0020.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0021.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0021.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0022.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0022.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0023.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0023.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0024.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0024.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0025.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0025.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0026.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0026.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0027.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0027.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0028.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0028.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0029.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0029.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0030.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0030.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0031.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0031.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0032.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0032.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0033.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0033.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0034.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0034.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0035.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0035.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0036.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0036.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0037.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0037.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0038.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0038.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0039.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0039.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0040.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0040.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0041.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0041.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0042.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0042.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0043.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0043.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0044.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0044.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0045.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0045.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0046.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0046.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0047.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0047.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0048.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0048.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0049.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0049.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0050.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0050.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0051.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0051.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0052.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0052.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0053.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0053.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0054.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0054.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0055.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0055.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0056.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0056.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0057.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/ALSScan_-_Casting_Model_7/ALS_Model-7_Karina-Grand_high_0057.jpg"
+}
+]
+        
+    ;
+
+  return (
+    <div className="App">
+      <ImageGallery
+        items={images}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        onPlay={() => {
+          alert("slideshow is now playing!");
+        }}
+      />
+    </div>
+  );
+}

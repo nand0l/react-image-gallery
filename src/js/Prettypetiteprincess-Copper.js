@@ -1,0 +1,198 @@
+import "./styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+export default function App() {
+  const images = [
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/01.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/01.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/02.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/02.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/03.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/03.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/04.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/04.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/05.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/05.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/06.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/06.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/07.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/07.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/08.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/08.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/09.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/09.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/10.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/10.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/12.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/12.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/14.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/14.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/15.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/15.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/16.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/16.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/17.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/17.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/18.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/18.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/19.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/19.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/20.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/20.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/21.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/21.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/22.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/22.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/23.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/23.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/24.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/24.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/25.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/25.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/26.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/26.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/27.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/27.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/28.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/28.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/29.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/29.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/30.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/30.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/31.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/31.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/32.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/32.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/33.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/33.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/34.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/34.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/35.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/35.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/36.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/36.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/37.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/37.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/38.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/38.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/39.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/39.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/40.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/40.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/42.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/42.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/43.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/43.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/44.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/44.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/47.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/47.jpg"
+},
+{
+	"original":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/48.jpg",
+	"thumbnail":"https://00009999000088889999.s3.eu-west-1.amazonaws.com/single_folders/Prettypetiteprincess-Copper/48.jpg"
+}
+]
+        
+    ;
+
+  return (
+    <div className="App">
+      <ImageGallery
+        items={images}
+        showPlayButton={true}
+        showFullscreenButton={true}
+        slideInterval={3000}
+        slideOnThumbnailOver={true}
+        showIndex={true}
+        onPlay={() => {
+          alert("slideshow is now playing!");
+        }}
+      />
+    </div>
+  );
+}

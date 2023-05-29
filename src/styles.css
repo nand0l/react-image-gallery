@@ -1,3 +1,5 @@
+@import "react-image-gallery/styles/css/image-gallery.css";
+
 body{
   margin: 0;
   padding: 20;
@@ -18,4 +20,14 @@ body{
     font-family: Arial;
     text-align: center;
   }
-  
+
+.image-gallery-slide img {
+  object-fit: contain;
+}
+
+.image-gallery-image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
